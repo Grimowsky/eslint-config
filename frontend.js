@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
   },
   extends: ['./base.js'],
-  plugins: ['@typescript-eslint', 'react'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
   rules: {
     'react-hooks/exhaustive-deps': [
       'warn',
