@@ -8,6 +8,8 @@
         "airbnb",
         "plugin:prettier/recommended",
         "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
     "globals": {
@@ -23,8 +25,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "react"
     ],
     "rules": {
         "prettier/prettier": [
