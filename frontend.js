@@ -1,12 +1,10 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    './base.js',
-  ],
+  extends: ['./base.js'],
+  plugins: ['@typescript-eslint', 'react'],
   rules: {
     'react-hooks/exhaustive-deps': [
       'warn',

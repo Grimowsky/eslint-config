@@ -1,6 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['prettier'],
+  extends: [
+    'prettier',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: '.',
@@ -67,7 +71,7 @@ module.exports = {
       },
     ],
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', '@typescript-eslint'],
   env: {
     node: true,
     es6: true,
